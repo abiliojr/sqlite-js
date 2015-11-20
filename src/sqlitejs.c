@@ -153,7 +153,7 @@ static duk_context *getAssociatedDukHeap(sqlite3_context *ctx) {
 
 
 //
-// Loads code chunk into the Duk stack
+// Loads a code chunk into the Duk stack
 //
 
 static int pushDukChunk(duk_context *where, const unsigned char *code, const unsigned char *init,
@@ -349,6 +349,7 @@ static void messageCodeCompilingResult(sqlite3_context *ctx, int res, int num_va
 	}
 }
 
+
 //
 // Create a new SQL js function (called by SQLite)
 //
@@ -364,7 +365,6 @@ static void sql_createJS(sqlite3_context *ctx, int num_values, sqlite3_value **v
 		sqlite3_result_error(ctx, msg, -1);
 		return;
 	}
-
 
 	name = (char *) sqlite3_value_text(values[0]);
 
@@ -407,6 +407,10 @@ static void sql_createJS(sqlite3_context *ctx, int num_values, sqlite3_value **v
 }
 
 
+//
+// Load data from a file (return a text or a blob)
+//
+
 static void sql_loadFile(sqlite3_context *ctx, int num_values, sqlite3_value **values) {
 	FILE *f;
 	char *buffer = 0;
@@ -439,6 +443,7 @@ static void sql_loadFile(sqlite3_context *ctx, int num_values, sqlite3_value **v
 
 	fclose (f);
 }
+
 
 //
 // plugin main
