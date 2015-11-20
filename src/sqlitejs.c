@@ -205,7 +205,6 @@ static void executeDukChunk(duk_context *where, int chunk) {
 //
 static int checkStackLen(duk_context *stack, sqlite3_context *ctx, int validLen) {
 	if (duk_get_top(stack) != validLen) {
-		// #todo: check next message
 		sqlite3_result_error(ctx, "Invalid javascript stack length! " \
 			"This normally happens if your code doesn't return any value.", -1);
 		return 0;
