@@ -1,6 +1,6 @@
 # To build this, download and extract duktape
 #
-# extract the content of duktape source code tar. You must end with a directory called duktape-DUKTAPE_VERSION (ie: duktape-1.3.0)
+# extract the content of duktape source code tar. You must end with a directory called duktape-DUKTAPE_VERSION (ie: duktape-1.5.1)
 # please set the DUKTAPE_VERSION variable accordingly
 #
 # To build this on FreeBSD install sqlite3

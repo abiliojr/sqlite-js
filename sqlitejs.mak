@@ -1,7 +1,7 @@
 # to run this: "nmake -f sqlitejs.mak"
 #
 # Extract the content of duktape source code tar.
-# You must end with a directory called duktape-DUKTAPE_VERSION (ie: duktape-1.3.0).
+# You must end with a directory called duktape-DUKTAPE_VERSION (ie: duktape-1.5.1).
 # Please set the DUKTAPE_VERSION variable accordingly.
 #
 # Extract sqlite3.h and sqlite3ext.h inside a folder called sqlite.
@@ -10,7 +10,7 @@
 #
 # Note: this Makefile hasn't been tested
 
-DUKTAPE_VERSION=1.3.0
+DUKTAPE_VERSION=1.5.1
 
 CPP=cl.exe
 
