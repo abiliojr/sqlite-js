@@ -9,7 +9,7 @@
 #	libsqlite3-dev or similar 
 
 
-DUKTAPE_VERSION=1.5.1
+DUKTAPE_VERSION=2.0.0
 
 SQLITE_FLAGS=`pkg-config --cflags --silence-errors sqlite3`
 COMPILE_SWITCHES=-std=c99 -O3
