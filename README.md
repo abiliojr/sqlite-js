@@ -111,7 +111,7 @@ select createjs('longcode', select loadfile('longcode.js'));
 
 # Building
 
-This plugin uses [Duktape](http://duktape.org/) as the JavaScript machine. You must download their code from http://duktape.org/download.html, and extract it in the plugin base directory. You must end up with a directory called duktape-DUKTAPE_VERSION (ie: duktape-2.0.0). Please edit the Makefile to set the ```DUKTAPE_VERSION``` variable accordingly.
+This plugin uses [Duktape](http://duktape.org/) as the JavaScript machine. You must download their code from http://duktape.org/download.html, and extract it in the plugin base directory. You must end up with a directory called duktape-DUKTAPE_VERSION (ie: duktape-3.2.0).
 
 On FreeBSD, you must have ```sqlite3``` installed. The Linux equivalent is something like ```libsqlite3-dev``` (Ubuntu) or ```sqlite-devel``` (Fedora). The library names and their locations could be different on other Operating Systems. If that's the case, you may need to edit the Makefile.
 
