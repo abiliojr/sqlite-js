@@ -8,6 +8,7 @@
 #	libsqlite3-dev or similar
 
 
+SHELL = /bin/bash
 SQLITE_FLAGS=`pkg-config --cflags --silence-errors sqlite3`
 COMPILE_SWITCHES=-std=c99 -O3 -fPIC
 DUKTAPE_LIB != ls -d duktape-?.?.?
